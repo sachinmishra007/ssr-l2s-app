@@ -1,0 +1,268 @@
+<ng-template #HeaderRender></ng-template>
+
+<div class="max-width" #mainelem>
+  <h1 class="title">Ways to achieve of Micro Frontends.</h1>
+  <div class="profile-info">
+    <div class="author-info">
+      <div class="author-profile">
+        <img src="https://pbs.twimg.com/profile_images/1086672507023867904/jLFOl73d_400x400.jpg" alt="Sachin Mishra" />
+      </div>
+      <div class="author-details">
+        <span class="author">
+          <a href="https://sm-cka.surge.sh" target="_blank">Sachin Mishra</a>
+        </span>
+        <span class="author-description">
+          Sachin Mishra is a Full Stack Developer who has consulted on large-scale projects in fields ranging from
+          education and publishing to finance.
+        </span>
+      </div>
+    </div>
+    <div class="share-icons">
+      <div class="author-share">
+        <div class="icons" (click)="share('twitter')"><i class="fab fa-twitter"></i></div>
+        <div class="icons" (click)="share('facebook')"><i class="fab fa-facebook-f"></i></div>
+        <div class="icons" (click)="share('linkedin')"><i class="fab fa-linkedin-in"></i></div>
+        <div class="icons" (click)="share('pinterest')"><i class="fab fa-pinterest-square"></i></div>
+        <div class="icons" (click)="share('whatsapp')"><i class="fab fa-whatsapp"></i></div>
+      </div>
+    </div>
+  </div>
+  <div class="content-info">
+    <div class="content-type">
+      Web Front-End
+    </div>
+    <div class="content-readtime">
+      7 Minutes Read
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="content">
+      <h1 class="title">What is Micro Frontend?</h1>
+      <div class="micro-description">
+        <div class="abstraction">
+          The concept of <span>Micro Frontend Architecture</span> is new thought about a web application as a
+          <span>composition</span> of features
+          owned by different independent teams. Each team having a distinct area of business that it specializes in.
+        </div>
+        <img src="../assets/microfrontend.png" alt="Microfrontend Application">
+        <ul>
+          <li>Micro frontend is new terminology which has been introduced to decouple the monolithic frontend web
+            application code as well as development life cycle to
+            isolated micro apps.</li>
+          <li>
+            The Micro Frontend design pattern has become a part of the application development life cycle, is often
+            developed by a separate team, grows and gets more difficult to maintain, this type of application is called
+            Frontend Monolith.
+          </li>
+          <li>
+            The concept of micro frontend has been brought up in order to overcome issue and limitation related to
+            monolithic apps.
+          </li>
+          <li>
+            Micro Frontend is a Microservice Testing approach to front-end web development. The way is to build a
+            powerful and feature-rich web application which resides on top of a Microservice architecture.
+          </li>
+          <li>
+
+            The architecture serves the purpose of dividing the entire technical stack based on business domain. The
+            architecture gives you the freedom to develop the application with consistent level of flexibility,
+            testability, and velocity that backend teams get during Microservices. Development.
+
+          </li>
+        </ul>
+      </div>
+      <h1 class="title">How does Micro Frontend work?</h1>
+      <div class="how-works">
+        The advantage of the micro front end app is to enable the cross functional or remotely located team to develop
+        the E2E features independently. It helps to them maintain the code deploy the code without affecting other
+        application.
+      </div>
+
+      <ul class="core-ideas">
+        <li>
+          <div class="core-idea-point">
+            Technology Agnostic
+          </div>
+          <div class="core-idea-description">
+            Each of the team should able to choose and upgrade their stack without coordinating with other team.
+            The architecture enables us to select the own technology and implement with considering other factors.
+            It also help us to integrate the multiple cloud cdn hosted project under the one roof like AWS,Azure and
+            GCP.
+          </div>
+        </li>
+        <li>
+          <div class="core-idea-point">
+            Isolate Team Code
+          </div>
+          <div class="core-idea-description">
+            Build independent apps that are self contained. Don’t rely on shared state or global variables.
+            This helps to team isolate and develop the code in different environment with different methodology.
+          </div>
+        </li>
+        <li>
+          <div class="core-idea-point">
+            Separated repositories
+          </div>
+          <div class="core-idea-description">
+            The microfrontend helps to create the separate plugin also give the flexibility to do independent code
+            check-in as well as code management.
+          </div>
+        </li>
+        <li>
+          <div class="core-idea-point">
+            Independent deployments
+          </div>
+          <div class="core-idea-description">
+            On top of it allows to create the separate repositories because of independent behaviour. We can create our
+            own CI/CD release cycle of the each of the microfrontend with any dependencies.
+          </div>
+        </li>
+        <li>
+          <div class="core-idea-point">
+            Faster builds and releases
+          </div>
+          <div class="core-idea-description">
+            Since the code has only the specific business use-case that helps to create faster build and release
+            process.
+          </div>
+        </li>
+        <li>
+          <div class="core-idea-point">
+            Autonomous teams
+          </div>
+          <div class="core-idea-description">
+            The terminology of microfrontend helps us to achive the development interpedently.
+          </div>
+        </li>
+        <li>
+          <div class="core-idea-point">
+            Easier debugging and maintenance
+          </div>
+          <div class="core-idea-description">
+            Since the each of the microfrontend application hosted in the independent environment. It helps to debugging
+            the application easily because of independent nature as well as easier to maintain.
+          </div>
+        </li>
+      </ul>
+      <div class="ways-to-achieve">
+        <h1 class="title">Break application into microfrontend application ?</h1>
+        <p>Let’s imagine that you are creating the complex application. And you would like to develop the application in
+          multiple application like in this example, monolithic angular application has been divided into multiple micro
+          front end application. You could break the entire application based upon the specific business use case and
+          area.</p>
+        <img src="../assets/micfrontend1.png" alt="Working of Microfrontend Application">
+        <ul class="ways-example-description">
+          <li><span>Composition App</span> - It will combine all the micro apps and make SPA.</li>
+          <li><span>Header Navigation</span> - It will be responsible for the header navigation.</li>
+          <li><span>Left Navigation</span> - It will be responsible for the left navigation.</li>
+          <li><span>Landing Page Micro App 1</span> - It will hold the landing page code</li>
+          <li><span>Landing Page Micro App 2</span></li>
+        </ul>
+        <p>Now you create one separated angular app for each domain and use some resource, like iframes, to composite a
+          page that shows the four apps as one to the user.</p>
+        <p>If you add a new code change to the <b>Landing Page Micro Application 2</b>, you redeploy only its app and
+          not the whole site.
+        </p>
+      </div>
+      <div class="how-to-do">
+        <h1 class="title">How to do ?</h1>
+        <p>
+          There are various ways to achieve the microfrontend architecture. And till now there hasn’t been any standards
+          defined to achieve the objective. But We can use below trick and techniques to achieve the objective.
+        </p>
+        <ul class="how-to-content">
+          <li>
+            <div class="how-to-title">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank">iframe</a>
+            </div>
+            <div class="how-to-description">
+              An iFrame is a frame within a frame. It is a component of an HTML element that allows you to embed
+              documents, videos, and interactive media within a page. By doing this, you can display a secondary webpage
+              on your main page.
+
+            </div>
+          </li>
+          <li>
+            <div class="how-to-title">
+              <a href="https://www.webcomponents.org/introduction" target="_blank">Web Components</a>
+            </div>
+            <div class="how-to-description">
+              <p class="align-p">Web components are a set of web platform APIs that allow you to create new custom,
+                reusable,
+                encapsulated HTML tags to use in web pages and web apps. Custom components and widgets build on the Web
+                Component standards, will work across modern browsers, and can be used with any JavaScript library or
+                framework that works with HTML.</p>
+              <p class="align-p">Web components are based on existing web standards. Features to support web components
+                are currently being added to the HTML and DOM specs, letting web developers easily extend HTML with new
+                elements with encapsulated styling and custom behavior.</p>
+
+            </div>
+          </li>
+          <li>
+            <div class="how-to-title">
+              <a href="https://frint.js.org/docs" target="_blank">Frint</a>
+            </div>
+            <div class="how-to-description">
+              Single-spa is a framework for bringing together multiple JavaScript microfrontends in a frontend
+              application. Architecting your frontend using single-spa enables many benefits, such as:
+              <ul>
+                <li>Gives your <b>applications a structure</b></li>
+                <li><b>Environment agnostic</b> (runs in browser, server, and CLI)</li>
+                <li><b>Modular architecture</b> with Apps</li>
+                <li><b>Progressive and easy</b> to adopt in existing applications</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="how-to-title">
+              <a href="https://single-spa.js.org/docs/getting-started-overview" target="_blank">Single SPA</a>
+            </div>
+            <div class="how-to-description">
+              Single-spa is a framework for bringing together multiple JavaScript microfrontends in a frontend
+              application. Architecting your frontend using single-spa enables many benefits, such as:
+              <ul>
+                <li>Use <b>multiple frameworks</b> on the same page without page refreshing (React, AngularJS, Angular,
+                  Ember,
+                  or whatever you're using)</li>
+                <li>Deploy your microfrontends <b>independently</b></li>
+                <li>Write code using a new framework, without rewriting your <b>existing app</b></li>
+                <li>Lazy load code for improved <b>initial load time</b></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="how-to-title">
+              <a href="https://www.nginx.com/resources/glossary/reverse-proxy-server" target="_blank">Reverse Proxy</a>
+            </div>
+            <div class="how-to-description">
+              A reverse proxy server is a type of proxy server that typically sits behind the firewall in a private
+              network and directs client requests to the appropriate backend server. A reverse proxy provides an
+              additional level of abstraction and control to ensure the smooth flow of network traffic between clients
+              and servers.
+            </div>
+          </li>
+          <li>
+            <div class="how-to-title">
+              <a href="https://www.redhat.com/en/topics/api/what-does-an-api-gateway-do" target="_blank">API Gateway
+              </a>
+            </div>
+            <div class="how-to-description">
+              An API gateway is an API management tool that sits between a client and a collection of backend services.
+              An API gateway acts as a reverse proxy to accept all application programming interface (API) calls,
+              aggregate the various services required to fulfill them, and return the appropriate result.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="ads">
+      <h1>ads</h1>
+    </div>
+  </div>
+</div>
+
+<!-- 
+  <div class="copy-right-info">
+    <span>Copyright © 2021</span>
+  </div> -->

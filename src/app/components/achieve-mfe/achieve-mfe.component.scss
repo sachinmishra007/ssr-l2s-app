@@ -1,0 +1,670 @@
+.max-width {
+    max-width: 100%;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.darkTheme {
+    background: black;
+    color: white;
+    .profile-info {
+        .author-info {
+            .author-details {
+                .author {
+                    a {
+                        color: #999fff;
+                    }
+                }
+                .author-description {
+                    color: white !important;
+                }
+            }
+        }
+    }
+    .content-info {
+        .content-type {
+            color: antiquewhite !important;
+        }
+        .content-readtime {
+            color: #ff8181 !important;
+        }
+    }
+    .main-content {
+        .content {
+            .micro-description {
+                .abstraction {
+                    span {
+                        color: white !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .profile-info {
+        .author-share {
+            .icons {
+                border: 1px solid #212121 !important;
+            }
+        }
+    }
+
+    .how-to-do {
+        .how-to-content {
+            li {
+                .how-to-title {
+                    a {
+                        color: #999fff;
+                    }
+                }
+            }
+        }
+    }
+}
+.copy-right-info {
+    background: #312c51;
+    width: 100%;
+    height: 100px;
+}
+.max-width {
+    padding-top: 5%;
+    .content-info {
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        // justify-content: space-between;
+        .content-type {
+            font-size: 13px;
+            color: #1b1b1b;
+            font-family: "Noto Sans";
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        .content-readtime {
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: #8e8e8e;
+            margin-left: 13px;
+        }
+    }
+    .title {
+        border-bottom: 1px solid #f3e6e6;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .profile-info {
+        display: flex;
+        border-bottom: 1px solid #f3e6e6;
+        justify-content: space-between;
+        .author-info {
+            display: flex;
+            padding: 30px 0px;
+            width: 50%;
+            .author-profile {
+                // margin-top: 10px;
+                img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 10px;
+                }
+            }
+            .author-details {
+                display: flex;
+                flex-direction: column;
+                .author {
+                    font-size: 13px;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    color: #9696dc;
+                    // margin-top: 15px;
+                    margin-left: 15px;
+                    cursor: pointer;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+                .author-description {
+                    color: black;
+                    font-size: 13px;
+                    margin-top: 0px;
+                    margin-top: 5px;
+                    font-weight: 200;
+                    margin-left: 15px;
+                    width: 400px;
+                    text-align: justify;
+                    word-spacing: 0px;
+                }
+            }
+        }
+
+        .share-icons {
+            display: flex;
+            height: 20%;
+            margin-top: 40px;
+
+            .icon-hide {
+                width: 0px;
+                overflow: hidden;
+            }
+            .share {
+                cursor: pointer;
+                font-size: 15px;
+                letter-spacing: 2px;
+                padding-top: 15px;
+                margin-left: 10px;
+                border: 1px solid #f3e6e6;
+                padding-left: 15px;
+                padding-right: 15px;
+                color: #656060;
+                .share-text {
+                    margin-left: 10px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .author-share {
+            display: flex;
+            // height: 20%;
+            // margin-top: 30px;
+            .icons {
+                cursor: pointer;
+                padding-top: 10px;
+                padding-right: 20px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                border: 1px solid #f7ebeb;
+                color: #52b1b1;
+                i {
+                    font-size: 25px;
+                    transition: 300ms;
+                }
+                .fa-twitter {
+                    color: #1da1f2;
+                }
+                .fa-facebook-f {
+                    color: #3b5998;
+                }
+                .fa-linkedin-in {
+                    color: #0077b5;
+                }
+
+                .fa-pinterest-square {
+                    color: #e60023;
+                }
+
+                .fa-whatsapp {
+                    color: #075e54;
+                }
+                i:hover {
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+
+    .main-content {
+        display: flex;
+        padding-top: 20px;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        .content {
+            border: 1px solid #f7ebeb;
+            border-radius: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            .core-ideas {
+                list-style: none;
+                .core-idea-point {
+                    font-size: 15px;
+                    padding-top: 10px;
+                    padding-bottom: 5px;
+                    font-weight: 700;
+                }
+                .core-idea-description {
+                    padding-bottom: 20px;
+                    font-size: 15px;
+                    text-align: justify;
+                }
+            }
+            .how-works {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                font-size: 15px;
+            }
+            .micro-description {
+                ul {
+                    list-style: none;
+                    // padding-left: 20px;
+                    padding-right: 20px;
+                    li {
+                        padding-bottom: 20px;
+                        font-size: 15px;
+                        text-align: justify;
+                    }
+                }
+                .abstraction {
+                    padding: 50px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    span {
+                        color: #382f2f;
+                        font-size: 17px;
+                        font-weight: bolder;
+                    }
+                }
+                img {
+                    width: 100%;
+                    height: 500px;
+                    padding-bottom: 12px;
+                    object-fit: contain;
+                }
+            }
+            .ways-to-achieve {
+                img {
+                    width: 100%;
+                    // height: 500px;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                    object-fit: contain;
+                }
+                p {
+                    padding: 20px;
+                    text-align: justify;
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+                .ways-example-description {
+                    padding-left: 30px;
+                    padding-top: 20px;
+                    li {
+                        padding-bottom: 10px;
+                    }
+                    span {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .how-to-do {
+                p {
+                    padding: 20px;
+                    text-align: justify;
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+                .how-to-content {
+                    padding-left: 30px;
+                    padding-right: 20px;
+
+                    .how-to-title {
+                        font-size: 15px;
+                        font-weight: 700;
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                    .how-to-description {
+                        font-size: 15px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        ul {
+                            padding: 20px;
+                            list-style: inherit;
+                            li {
+                                padding: 5px;
+                            }
+                        }
+                        .align-p {
+                            padding: 0px;
+                            margin-bottom: 10px;
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+
+            width: 80%;
+        }
+        .ads {
+            padding-bottom: 10px;
+            padding-top: 10px;
+            display: none;
+            width: 20%;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1024px) {
+    .max-width {
+        .title {
+            font-size: 20px;
+            word-spacing: 2px;
+            text-align: center;
+        }
+        padding: 0px 30px;
+        .profile-info {
+        }
+        .author-info {
+            .author-details {
+                .author-description {
+                    width: 350px !important;
+                    word-spacing: 0px;
+                    font-size: 13px !important;
+                }
+            }
+        }
+        .main-content {
+            flex-direction: column-reverse;
+            .content {
+                width: 100%;
+                .micro-description {
+                    img {
+                        height: auto;
+                    }
+                    .abstraction {
+                        padding: 45px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .max-width {
+        .title {
+            font-size: 20px;
+            word-spacing: 2px;
+            text-align: center;
+        }
+        padding: 0px 30px;
+        .profile-info {
+        }
+        .author-info {
+            .author-details {
+                .author-description {
+                    width: 300px !important;
+                    word-spacing: 0px;
+                    font-size: 13px !important;
+                }
+            }
+        }
+        .main-content {
+            flex-direction: column-reverse;
+            .content {
+                width: 100%;
+                .micro-description {
+                    img {
+                        height: auto;
+                    }
+                    .abstraction {
+                        padding: 45px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .max-width {
+        .title {
+            font-size: 20px;
+            word-spacing: 2px;
+            text-align: center;
+        }
+        padding: 0px 30px;
+        .profile-info {
+            flex-direction: column;
+            .share-icons {
+                margin: 0 auto;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                .share {
+                    margin-left: 0px;
+                }
+            }
+        }
+        .author-info {
+            .author-details {
+                .author-description {
+                    width: 350px !important;
+                    word-spacing: 0px;
+                    font-size: 13px !important;
+                }
+            }
+        }
+        .main-content {
+            flex-direction: column-reverse;
+            .content {
+                width: 100%;
+                .micro-description {
+                    img {
+                        height: auto;
+                    }
+                    .abstraction {
+                        padding: 40px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .max-width {
+        .title {
+            font-size: 20px;
+            word-spacing: 2px;
+            text-align: center;
+        }
+        padding: 0px 30px;
+        .profile-info {
+            flex-direction: column;
+            .share-icons {
+                margin: 0 auto;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                .share {
+                    margin-left: 0px;
+                }
+            }
+        }
+        .author-info {
+            .author-details {
+                .author-description {
+                    width: 350px !important;
+                    word-spacing: 0px;
+                    font-size: 13px !important;
+                }
+            }
+        }
+        .main-content {
+            flex-direction: column-reverse;
+            .content {
+                width: 100%;
+                .micro-description {
+                    img {
+                        height: auto;
+                    }
+                    .abstraction {
+                        padding: 40px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .max-width {
+        .title {
+            font-size: 20px;
+            word-spacing: 2px;
+            text-align: center;
+        }
+        padding: 0px 30px;
+        .profile-info {
+            flex-direction: column;
+            .share-icons {
+                margin: 0 auto;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                .share {
+                    margin-left: 0px;
+                }
+            }
+        }
+        .author-info {
+            .author-details {
+                .author-description {
+                    width: 350px !important;
+                    word-spacing: 0px;
+                    font-size: 13px !important;
+                }
+            }
+        }
+        .main-content {
+            flex-direction: column-reverse;
+            .content {
+                width: 100%;
+                .micro-description {
+                    img {
+                        height: auto;
+                    }
+                    .abstraction {
+                        padding: 30px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .max-width {
+        .title {
+            font-size: 15px;
+            word-spacing: 2px;
+            text-align: center;
+        }
+        padding: 0px 20px;
+        .profile-info {
+            flex-direction: column;
+            .author-share {
+                .icons {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    // border: none;
+                }
+                // justify-content: space-between;
+                // width: 100%;
+                // border: none;
+            }
+            .share-icons {
+                margin: 0 auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                .share {
+                    margin-left: 0px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    // border: none;
+                }
+            }
+        }
+        .author-info {
+            .author-details {
+                .author-description {
+                    width: 280px !important;
+                    word-spacing: 0px;
+                    font-size: 12px !important;
+                }
+            }
+        }
+        .main-content {
+            flex-direction: column-reverse;
+            .content {
+                width: 100%;
+                .micro-description {
+                    img {
+                        height: auto;
+                    }
+                    .abstraction {
+                        padding: 25px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .max-width {
+        .title {
+            font-size: 15px;
+            word-spacing: 2px;
+            text-align: center;
+        }
+        padding: 0px 20px;
+        .profile-info {
+            flex-direction: column;
+            .author-share {
+                .icons {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    // border: none;
+                }
+                // justify-content: space-between;
+                // width: 100%;
+                // border: none;
+            }
+            .share-icons {
+                margin: 0 auto;
+                margin-top: 0px;
+                margin-bottom: 20px;
+                .share {
+                    margin-left: 0px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    // border: none;
+                }
+            }
+        }
+        .author-info {
+            .author-details {
+                .author-description {
+                    width: 185px !important;
+                    word-spacing: 0px;
+                    font-size: 11px !important;
+                }
+            }
+        }
+
+        .main-content {
+            flex-direction: column-reverse;
+            .content {
+                width: 100%;
+                .micro-description {
+                    img {
+                        height: auto;
+                    }
+                    .abstraction {
+                        padding: 15px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}

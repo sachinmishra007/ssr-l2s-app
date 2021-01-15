@@ -1,0 +1,17 @@
+<nav class="navbar">
+    <div class="max-width">
+        <div class="logo">
+            <span class="learn">Learn</span>
+            <span class="two">2</span>
+            <span class="share">Share</span>
+        </div>
+        <div #toggle class="toggle-track" (click)="toggleOption(toggle)">
+            <div class="toggle-track">
+                <div class="toggle-track-check"><span class="toggle moon"></span></div>
+                <div class="toggle-track-x"><span class="toggle sun"></span></div>
+            </div>
+            <input type="checkbox" aria-label="Dark mode toggle" class="toggle-screenreader">
+            <div class="toggle-thumb"></div>
+        </div>
+    </div>
+</nav>

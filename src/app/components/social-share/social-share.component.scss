@@ -1,0 +1,40 @@
+ 
+
+.author-share {
+    display: flex;
+    // height: 20%;
+    // margin-top: 30px;
+    .icons {
+        cursor: pointer;
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        border: 1px solid #f7ebeb;
+        color: #52b1b1;
+        i {
+            font-size: 25px;
+            transition: 300ms;
+        }
+        .fa-twitter {
+            color: #1da1f2;
+        }
+        .fa-facebook-f {
+            color: #3b5998;
+        }
+        .fa-linkedin-in {
+            color: #0077b5;
+        }
+
+        .fa-pinterest-square {
+            color: #e60023;
+        }
+
+        .fa-whatsapp {
+            color: #075e54;
+        }
+        i:hover {
+            transform: scale(1.5);
+        }
+    }
+}

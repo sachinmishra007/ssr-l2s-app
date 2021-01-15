@@ -86,7 +86,7 @@
     position: fixed;
     width: 100%;
     font-family: Noto Sans, sans-serif;
-    box-shadow: -4px 1px 3px 3px #312c51;
+    box-shadow: -4px -1px 10px 3px #312c51;
     .max-width {
         background: #312c51;
         padding-top: 25px;
@@ -124,6 +124,22 @@
             span:nth-child(2):hover {
                 color: yellow;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        .max-width {
+            padding: 25px 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbar {
+        .max-width {
+            padding: 25px 40px;
         }
     }
 }

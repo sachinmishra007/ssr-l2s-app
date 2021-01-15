@@ -8,7 +8,7 @@ import { CommunicationService } from './services/communication.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  // changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   // @ViewChild('mainContent') private templateViewContainerRef?: TemplateRef<any>;

@@ -14,6 +14,7 @@ export class AchieveMfeComponent implements AfterViewInit, OnDestroy {
   @ViewChild('mainelem', { static: false }) mainelem: any;
   @ViewChild('toggle', { static: false }) toggle: any;
   @ViewChild('HeaderRender', { static: true, read: ViewContainerRef }) headerRender: ViewContainerRef;
+  @ViewChild('socialShare', { static: true, read: ViewContainerRef }) socialShare: ViewContainerRef;
   manageSubscription$: Subscription = new Subscription();
   constructor(
     private _cdRef: ChangeDetectorRef,
@@ -38,21 +39,23 @@ export class AchieveMfeComponent implements AfterViewInit, OnDestroy {
       .catch((_error) => {
         console.log(_error);
       })
-    // // loading the social share icons
-    // await import(/* webpackChunkName: "03-social-share-icons.module"*/ '../social-share/social-share.module')
-    //   .then((_comp) => {
-    //     const factory = this._resolver.resolveComponentFactory(SocialShareComponent);
-    //     const _componentRef = this.headerRender.createComponent(factory);
-    //     _componentRef.instance.shareConfig = {
-    //       post_url: 'https://www.google.com/',
-    //       post_title: 'Ways to achieve the microfrontend',
-    //       hastags: 'microfrontend, frontend,angular,iframe,singlespa,webcomponents,reverseporxy',
-    //       articleSummary: 'Ways to achieve the microfrontend',
-    //     }
-    //   })
-    //   .catch((_error) => {
-    //     console.log(_error);
-    //   });
+    
+    
+      // loading the social share icons
+    await import(/* webpackChunkName: "03-social-share-icons.module"*/ '../social-share/social-share.module')
+      .then((_comp) => {
+        const factory = this._resolver.resolveComponentFactory(SocialShareComponent);
+        const _componentRef = this.socialShare.createComponent(factory);
+        _componentRef.instance.shareConfig = {
+          post_url: 'https://www.google.com/',
+          post_title: 'Ways to achieve the microfrontend',
+          hastags: 'microfrontend, frontend,angular,iframe,singlespa,webcomponents,reverseporxy',
+          articleSummary: 'Ways to achieve the microfrontend',
+        }
+      })
+      .catch((_error) => {
+        console.log(_error);
+      });
 
     this.manageSubscription$.add(
       this._commSvc._mainComm.subscribe((_response: any) => {
